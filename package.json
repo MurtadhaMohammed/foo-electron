@@ -1,0 +1,24 @@
+{
+  "name": "web-note",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "serve": "parcel ./src/index.html --public-url ./ --target=electron ",
+    "rebuild": "electron-rebuild -f -w sqlite3 -v 4.0.4",
+    "build-win": "electron-packager . dot-lab --overwrite --asar=true --platform=win32 --arch=ia32 --icon=logo.ico --out=build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.7",
+    "vue": "^2.6.6",
+    "vue-hot-reload-api": "^2.3.2"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.5.2",
+    "vue-template-compiler": "^2.6.6"
+  }
+}
